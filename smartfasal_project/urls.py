@@ -21,7 +21,7 @@ urlpatterns = [
 
 
     #.ftp_login, name = 'ftp_login'), ## FTP PAGE
-    path('Live', views.Plots.ftp_login, name = 'Real_time_plot'), ## PLOTS PAGE
+    path('live', views.Plots.ftp_login, name = 'Real_time_plot'), ## PLOTS PAGE
     path('allreadings', views.upload_readings.allreadings, name = 'allreadings'), ## PLOTS PAGE
     path('smonereadings', views.upload_readings.smonereadings, name = 'smonereadings'), ## PLOTS PAGE
     path('smtworeadings', views.upload_readings.smthreereadings, name = 'smtworeadings'), ## PLOTS PAGE
