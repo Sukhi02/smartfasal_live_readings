@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+
+
+
+
+
+}
+h1 {
+    color: red;
+    margin-left: 80px;
+}
+</style>
+</head>
+
+<body>
+<h1>Click on the below button.</h1>
+
+
+<!--
+<form method="get" action="/ftp_login">
+  <button type="submit">FTP login </button>
+</form>
+<p>
+<form method="get" action="/plots">
+  <button type="submit">make plotting  </button>
+</form>
+<p>
+<form method="get" action="/visualising">
+  <button type="submit">Plots of the day </button>
+</form>
+
+-->
+ 
+<b> <a href="{% url 'ftp_login' %}">FTP_log in </a> <p>
+  <a href="{% url 'plots' %}"> Plots </a> <p>
+    <a href="{% url 'visualising' %}">Visualising </a> <p>
+
+</b>
+</body>
+</html>

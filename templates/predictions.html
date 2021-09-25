@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset = "utf-8" />
+</head>
+
+<body>
+
+{% block content %}
+
+<ul>
+{% for key, value in a03.items %}
+    <li><a href="{{key}}">{{value}}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+</body>
+</html>

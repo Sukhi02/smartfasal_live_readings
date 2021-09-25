@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+
+
+
+
+}
+h1 {
+    color: red;
+    margin-left: 80px;
+}
+</style>
+</head>
+<body>
+<h1>Click on the below button.</h1>
+
+
+<a href=" {% url 'allreadings' %} "> allreadings </a> <p> <br>
+<a href=" {% url 'smonereadings' %} "> smonereadings </a> <p> <br>
+<a href=" {% url 'smtworeadings' %} "> smtworeadings </a> <p> <br>
+<a href=" {% url 'smthreereadings' %} "> smthreereadings  </a> <p> <br>
+<a href=" {% url 'tempreadings' %} "> tempreadings </a> <p> <br>
+<a href=" {% url 'humidreadings' %} "> humidreadings </a> <p> <br>
+<a href=" {% url 'prsrreadings' %} "> prsrreadings  </a> <p> <br>
+<a href=" {% url 'lmnsreadings' %} "> lmnsreadings  </a> <p> <br>
+
+
+
+
+
+<form method="get" action="http://smartfasal.in/wp">
+  <button type="submit">Analyse the data</button>
+</form>
+<p>
+  <form method="get" action="http://smartfasal.in/wp">
+    <button type="submit">Predict the observations </button>
+  </form>
+  <p>
+
+  <form method="get" action="http://127.0.0.1:8000/results">
+    <button type="submit"> FTP test </button>
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>

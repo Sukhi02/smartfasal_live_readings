@@ -1,0 +1,8 @@
+Django
+gunicorn
+postgres
+whitenoise
+django_matplotlib
+pandas
+datetime
+plotly

@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+
+
+   background-image:url"{% static "polls/download.jpg" %}"
+
+}
+h1 {
+    color: red;
+    margin-left: 80px;
+}
+</style>
+</head>
+<body>
+<h1>Plots of the Day.</h1>
+
+<img src="{% static "polls/Soil Moisture at 1(dot)5 cm.png" %}" alt="Soil Moisture at 1(dot)5 cm"> <br>
+<img src="{% static "polls/Soil Moisture at 4(dot)5 cm.png" %}" alt="Soil Moisture at 4(dot)5 cm">
+<img src="{% static "polls/Soil Moisture at 8(dot)0 cm.png" %}" alt="Soil Moisture at 8(dot)0 cm">
+<img src="{% static "polls/Temperature.png" %}" alt="Temperature">
+<img src="{% static "polls/Humidity.png" %}" alt="Humidity">
+<img src="{% static "polls/Luminisity.png" %}" alt="Luminisity">
+
+
+</body>
+</html>
